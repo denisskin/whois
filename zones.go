@@ -1,6 +1,6 @@
 package whois
 
-var RootZones = map[string]string{
+var Providers = map[string]string{
 	"aarp":                     "whois.nic.aarp",
 	"abarth":                   "whois.afilias-srs.net",
 	"abbott":                   "whois.afilias-srs.net",
