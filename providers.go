@@ -1,5 +1,6 @@
 package whois
 
+// Providers for all TLDs
 var Providers = map[string]string{
 	"aarp":                     "whois.nic.aarp",
 	"abarth":                   "whois.afilias-srs.net",
@@ -652,6 +653,7 @@ var Providers = map[string]string{
 	"movie":                    "whois.donuts.co",
 	"movistar":                 "whois-fe.movistar.tango.knipp.de",
 	"mp":                       "whois.nic.mp",
+	"mq":                       "whois.mediaserv.net",
 	"ms":                       "whois.nic.ms",
 	"mtn":                      "whois.nic.mtn",
 	"mtpc":                     "whois.nic.gmo",
