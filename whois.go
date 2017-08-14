@@ -15,33 +15,48 @@ func ProviderByDomain(domain string) string {
 	return Providers[zone]
 }
 
-func LoadRawDomainInfo(domain string) ([]byte, error) {
+var ErrLimitExceeded = errors.New("Whois Limit Exceeded")
+
+var (
+	reLimitExceeded = regexp.MustCompile(`(?i:LIMIT EXCEEDED|queries exceeded)`)
+	reParam         = regexp.MustCompile(`[\r\n]\s*([a-zA-Z0-9\- /\\_]+):\s*(.*)`)
+)
+
+func LoadRawDomainInfo(domain string) (data []byte, err error) {
 
 	provider := ProviderByDomain(domain)
 	if provider == "" {
-		return nil, errors.New("Unknown provider for domain " + domain)
+		err = errors.New("Unknown provider for domain " + domain)
+		return
 	}
 
 	conn, err := net.Dial("tcp", provider+":43")
 	if err != nil {
-		return nil, err
+		return
 	}
 	defer conn.Close()
 
 	// write request
-	if err := conn.SetWriteDeadline(time.Now().Add(15 * time.Second)); err != nil {
-		return nil, err
+	if err = conn.SetWriteDeadline(time.Now().Add(15 * time.Second)); err != nil {
+		return
 	}
-	if _, err := conn.Write([]byte(domain + "\r\n")); err != nil {
-		return nil, err
+	if _, err = conn.Write([]byte(domain + "\r\n")); err != nil {
+		return
 	}
 
 	// read response
-	if err := conn.SetReadDeadline(time.Now().Add(15 * time.Second)); err != nil {
-		return nil, err
+	if err = conn.SetReadDeadline(time.Now().Add(15 * time.Second)); err != nil {
+		return
 	}
 
-	return ioutil.ReadAll(conn)
+	if data, err = ioutil.ReadAll(conn); err != nil {
+		return
+	}
+	if reLimitExceeded.Match(data) {
+		err = ErrLimitExceeded
+		return
+	}
+	return
 }
 
 func LoadDomainInfo(domain string) (*WhoisInfo, error) {
@@ -57,8 +72,6 @@ type WhoisInfo struct {
 	RawData []byte
 	Params  map[string][]string
 }
-
-var reParam = regexp.MustCompile(`[\r\n]\s*([a-zA-Z0-9\- /\\_]+):\s*(.*)`)
 
 func normalizeParamName(name string) string {
 	name = strings.TrimSpace(name)
