@@ -665,7 +665,7 @@ var Providers = map[string]string{
 	"mtn":                      "whois.nic.mtn",
 	"mtr":                      "whois.nic.mtr",
 	"mu":                       "whois.nic.mu",
-	"museum":                   "whois.museum",
+	"museum":                   "whois.nic.museum",
 	"mx":                       "whois.mx",
 	"my":                       "whois.mynic.my",
 	"mz":                       "whois.nic.mz",
