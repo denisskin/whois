@@ -272,6 +272,7 @@ var Providers = map[string]string{
 	"dds":                      "whois.nic.dds",
 	"de":                       "whois.denic.de",
 	"deal":                     "whois.nic.deal",
+	"dealer":                   "whois.nic.dealer",
 	"deals":                    "whois.nic.deals",
 	"degree":                   "whois.nic.degree",
 	"delivery":                 "whois.nic.delivery",
