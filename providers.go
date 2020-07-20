@@ -977,7 +977,6 @@ var Providers = map[string]string{
 	"sx":                       "whois.sx",
 	"sy":                       "whois.tld.sy",
 	"sydney":                   "whois.nic.sydney",
-	"symantec":                 "whois.nic.symantec",
 	"systems":                  "whois.nic.systems",
 	"tab":                      "whois.nic.tab",
 	"taipei":                   "whois.nic.taipei",
