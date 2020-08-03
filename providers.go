@@ -844,7 +844,6 @@ var Providers = map[string]string{
 	"rich":                     "whois.afilias-srs.net",
 	"richardli":                "whois.nic.richardli",
 	"ricoh":                    "whois.nic.ricoh",
-	"rightathome":              "whois.nic.rightathome",
 	"ril":                      "whois.nic.ril",
 	"rio":                      "whois.gtlds.nic.br",
 	"rip":                      "whois.nic.rip",
