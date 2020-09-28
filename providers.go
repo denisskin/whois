@@ -453,6 +453,7 @@ var Providers = map[string]string{
 	"guitars":                  "whois.uniregistry.net",
 	"guru":                     "whois.nic.guru",
 	"gy":                       "whois.registry.gy",
+	"hair":                     "whois.nic.hair",
 	"hamburg":                  "whois.nic.hamburg",
 	"hangout":                  "whois.nic.google",
 	"haus":                     "whois.nic.haus",
