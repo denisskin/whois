@@ -1,7 +1,10 @@
 package main
 
 import (
+	"bytes"
 	"fmt"
+	"io/ioutil"
+	"log"
 	"strings"
 	"time"
 
@@ -10,12 +13,15 @@ import (
 
 // Import TLDs from www.iana.org to fresh whois.config
 func main() {
-	fmt.Println(`##`)
-	fmt.Println(`# WHOIS servers for new TLDs (http://www.iana.org/domains/root/db)`)
-	fmt.Println(`# Current as of`, time.Now().Format("2006-01-02"))
-	fmt.Println(`# `)
-	fmt.Println(`# https://github.com/denisskin/whois/`)
-	fmt.Println(`##`)
+
+	f := bytes.NewBuffer(nil)
+
+	f.WriteString(`##`)
+	f.WriteString(`# WHOIS servers for new TLDs (http://www.iana.org/domains/root/db)`)
+	f.WriteString(`# Current as of ` + time.Now().Format("2006-01-02"))
+	f.WriteString(`# `)
+	f.WriteString(`# https://github.com/denisskin/whois/`)
+	f.WriteString(`##`)
 
 	rootDoc := httpdoc.NewDocument("http://www.iana.org/domains/root/db")
 	for _, lnk := range rootDoc.Links() {
@@ -27,8 +33,15 @@ func main() {
 				zone := strings.TrimPrefix(doc.URL().Path, "/domains/root/db/")
 				zone = strings.TrimSuffix(zone, ".html")
 
-				fmt.Printf("\n\\.%s$ %s", zone, whoisServer)
+				fmt.Fprintf(f, "\n\\.%s$ %s", zone, whoisServer)
+				log.Printf("- %s\t%s", zone, whoisServer)
 			}
 		}
 	}
+
+	// save config to whois.config
+	if err := ioutil.WriteFile("whois.config", f.Bytes(), 0666); err != nil {
+		log.Fatal(err)
+	}
+	log.Println("- whois.config updated")
 }
