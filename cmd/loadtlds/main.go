@@ -16,12 +16,12 @@ func main() {
 
 	f := bytes.NewBuffer(nil)
 
-	f.WriteString(`##`)
-	f.WriteString(`# WHOIS servers for new TLDs (http://www.iana.org/domains/root/db)`)
-	f.WriteString(`# Current as of ` + time.Now().Format("2006-01-02"))
-	f.WriteString(`# `)
-	f.WriteString(`# https://github.com/denisskin/whois/`)
-	f.WriteString(`##`)
+	f.WriteString("##\n")
+	f.WriteString("# WHOIS servers for new TLDs (http://www.iana.org/domains/root/db)")
+	f.WriteString("# Current as of " + time.Now().Format("2006-01-02") + "\n")
+	f.WriteString("# \n")
+	f.WriteString("# https://github.com/denisskin/whois/\n")
+	f.WriteString("##\n")
 
 	rootDoc := httpdoc.NewDocument("http://www.iana.org/domains/root/db")
 	for _, lnk := range rootDoc.Links() {
