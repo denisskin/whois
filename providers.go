@@ -944,6 +944,7 @@ var Providers = map[string]string{
 	"solutions":                "whois.nic.solutions",
 	"sony":                     "whois.nic.sony",
 	"soy":                      "whois.nic.google",
+	"spa":                      "whois.afilias-srs.net",
 	"space":                    "whois.nic.space",
 	"sport":                    "whois.nic.sport",
 	"spot":                     "whois.nic.spot",
