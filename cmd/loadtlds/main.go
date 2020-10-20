@@ -40,8 +40,8 @@ func main() {
 	}
 
 	// save config to whois.config
-	if err := ioutil.WriteFile("whois.config", f.Bytes(), 0666); err != nil {
+	if err := ioutil.WriteFile("whois.conf", f.Bytes(), 0666); err != nil {
 		log.Fatal(err)
 	}
-	log.Println("- whois.config updated")
+	log.Println("- whois.conf updated")
 }
