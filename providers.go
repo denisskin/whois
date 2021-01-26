@@ -810,6 +810,7 @@ var Providers = map[string]string{
 	"pw":                       "whois.nic.pw",
 	"pwc":                      "whois.afilias-srs.net",
 	"qa":                       "whois.registry.qa",
+	"qpon":                     "whois.nic.qpon",
 	"quebec":                   "whois.nic.quebec",
 	"quest":                    "whois.nic.quest",
 	"racing":                   "whois.nic.racing",
