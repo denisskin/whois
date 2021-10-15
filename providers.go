@@ -843,7 +843,6 @@ var Providers = map[string]string{
 	"ril":                      "whois.nic.ril",
 	"rio":                      "whois.gtlds.nic.br",
 	"rip":                      "whois.nic.rip",
-	"rmit":                     "whois.nic.rmit",
 	"ro":                       "whois.rotld.ro",
 	"rocks":                    "whois.nic.rocks",
 	"rodeo":                    "whois.nic.rodeo",
