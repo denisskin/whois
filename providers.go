@@ -770,6 +770,7 @@ var Providers = map[string]string{
 	"pink":                     "whois.nic.pink",
 	"pioneer":                  "whois.nic.gmo",
 	"pizza":                    "whois.nic.pizza",
+	"pk":                       "whois.pknic.net.pk",
 	"pl":                       "whois.dns.pl",
 	"place":                    "whois.nic.place",
 	"play":                     "whois.nic.google",
