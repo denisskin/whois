@@ -806,6 +806,7 @@ var Providers = map[string]string{
 	"re":                       "whois.nic.re",
 	"read":                     "whois.nic.read",
 	"realestate":               "whois.nic.realestate",
+	"realtor":                  "whois.nic.realtor",
 	"realty":                   "whois.nic.realty",
 	"recipes":                  "whois.nic.recipes",
 	"red":                      "whois.nic.red",
