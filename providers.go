@@ -882,7 +882,7 @@ var Providers = map[string]string{
 	"sb":                       "whois.nic.net.sb",
 	"sbi":                      "whois.nic.sbi",
 	"sbs":                      "whois.nic.sbs",
-	"sc":                       "whois2.afilias-grs.net",
+	"sc":                       "whois.nic.sc",
 	"scb":                      "whois.nic.scb",
 	"schaeffler":               "whois.afilias-srs.net",
 	"schmidt":                  "whois.nic.schmidt",
