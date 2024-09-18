@@ -16,6 +16,7 @@ var Providers = map[string]string{
 	"accountants":              "whois.nic.accountants",
 	"aco":                      "whois.nic.aco",
 	"actor":                    "whois.nic.actor",
+	"ad":                       "whois.nic.ad",
 	"ads":                      "whois.nic.google",
 	"adult":                    "whois.nic.adult",
 	"ae":                       "whois.aeda.net.ae",
