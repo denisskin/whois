@@ -259,7 +259,6 @@ var Providers = map[string]string{
 	"cymru":                    "whois.nic.cymru",
 	"cyou":                     "whois.nic.cyou",
 	"cz":                       "whois.nic.cz",
-	"dabur":                    "whois.nic.dabur",
 	"dad":                      "whois.nic.google",
 	"dance":                    "whois.nic.dance",
 	"data":                     "whois.nic.data",
