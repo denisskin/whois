@@ -693,7 +693,6 @@ var Providers = map[string]string{
 	"mx":                       "whois.mx",
 	"my":                       "whois.mynic.my",
 	"mz":                       "whois.nic.mz",
-	"na":                       "whois.na-nic.com.na",
 	"nab":                      "whois.nic.nab",
 	"nagoya":                   "whois.nic.nagoya",
 	"name":                     "whois.nic.name",
