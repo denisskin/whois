@@ -1250,6 +1250,7 @@ var Providers = map[string]string{
 	"yachts":                   "whois.nic.yachts",
 	"yahoo":                    "whois.nic.yahoo",
 	"yamaxun":                  "whois.nic.yamaxun",
+	"yandex":                   "whois.nic.yandex",
 	"ye":                       "whois.y.net.ye",
 	"yodobashi":                "whois.nic.gmo",
 	"yoga":                     "whois.nic.yoga",
