@@ -1,5 +1,6 @@
 # Actual whois list
-Actual whois.config for new TLDs. (Source: http://www.iana.org/domains/root/db) 
+Actual whois.config for new TLDs.
+(Source: http://www.iana.org/domains/root/db) 
 
 ## Setup actual whois.config for new TLDs (Linux, MacOS)
 ``` shell
