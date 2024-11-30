@@ -542,6 +542,7 @@ var Providers = map[string]string{
 	"jot":                      "whois.nic.jot",
 	"joy":                      "whois.nic.joy",
 	"jp":                       "whois.jprs.jp",
+	"jprs":                     "whois.nic.jprs",
 	"juegos":                   "whois.uniregistry.net",
 	"juniper":                  "whois.nic.juniper",
 	"kaufen":                   "whois.nic.kaufen",
