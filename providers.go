@@ -2,6 +2,7 @@ package whois
 
 // Providers for all TLDs
 var Providers = map[string]string{
+	"aaa":                      "whois.nic.aaa",
 	"aarp":                     "whois.nic.aarp",
 	"abb":                      "whois.nic.abb",
 	"abbott":                   "whois.nic.abbott",
@@ -728,6 +729,7 @@ var Providers = map[string]string{
 	"nowtv":                    "whois.nic.nowtv",
 	"nra":                      "whois.nic.nra",
 	"nrw":                      "whois.nic.nrw",
+	"ntt":                      "whois.nic.ntt",
 	"nu":                       "whois.iis.nu",
 	"nyc":                      "whois.nic.nyc",
 	"nz":                       "whois.irs.net.nz",
@@ -869,6 +871,7 @@ var Providers = map[string]string{
 	"saarland":                 "whois.nic.saarland",
 	"safe":                     "whois.nic.safe",
 	"safety":                   "whois.nic.safety",
+	"sakura":                   "whois.nic.sakura",
 	"sale":                     "whois.nic.sale",
 	"salon":                    "whois.nic.salon",
 	"samsclub":                 "whois.nic.samsclub",
