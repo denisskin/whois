@@ -41,7 +41,6 @@ var Providers = map[string]string{
 	"anquan":                   "whois.teleinfo.cn",
 	"anz":                      "whois.nic.anz",
 	"aol":                      "whois.nic.aol",
-	"apple":                    "whois.nic.apple",
 	"aquarelle":                "whois.nic.aquarelle",
 	"ar":                       "whois.nic.ar",
 	"arab":                     "whois.nic.arab",
