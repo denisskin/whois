@@ -420,6 +420,7 @@ var Providers = map[string]string{
 	"melbourne":                "whois.nic.melbourne",
 	"men":                      "whois.nic.men",
 	"menu":                     "whois.nic.menu",
+	"merck":                    "whois.nic.merck",
 	"merckmsd":                 "whois.nic.merckmsd",
 	"mg":                       "whois.nic.mg",
 	"miami":                    "whois.nic.miami",
